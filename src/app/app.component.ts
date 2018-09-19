@@ -6,5 +6,13 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'directives-assignment';
+  showParagraph = true;
+  clicksNum = [];
+  // counter = 0;
+
+    toggleParagraph = () => {
+      this.showParagraph = !this.showParagraph;
+      // this.counter++;
+      this.clicksNum.push(new Date());
+    }
 }
